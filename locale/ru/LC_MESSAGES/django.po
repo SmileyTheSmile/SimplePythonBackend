@@ -1,0 +1,194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# django-admin makemessage -l ru
+# python manage.py compilemessages --use-fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-23 10:25+0300\n"
+"PO-Revision-Date: 2023-04-09 19:39+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: project/forms.py:13
+msgid "EnterLogin"
+msgstr "Введите логин"
+
+#: project/forms.py:14
+msgid "UsernameHelp"
+msgstr ""
+
+#: project/forms.py:18
+msgid "LoginPlaceholder"
+msgstr "Введите имя пользователя"
+
+#: project/forms.py:25
+msgid "EnterPassword"
+msgstr "Введите пароль"
+
+#: project/forms.py:26
+#, fuzzy
+#| msgid "PasswordHint"
+msgid "PasswordHelp"
+msgstr "Введите ваш пароль"
+
+#: project/forms.py:30
+msgid "PasswordPlaceholder"
+msgstr "Введите пароль"
+
+#: project/forms.py:35
+msgid "RememberPassword"
+msgstr "Запомнить пароль?"
+
+#: project/forms.py:48
+msgid "RegisterUsername"
+msgstr "Имя пользователя"
+
+#: project/forms.py:58
+msgid "RegisterEmail"
+msgstr "Электронная почта"
+
+#: project/forms.py:68
+msgid "RegisterNickname"
+msgstr "Никнэйм"
+
+#: project/forms.py:78
+msgid "RegisterPassword1"
+msgstr "Пароль"
+
+#: project/forms.py:88
+msgid "RegisterPassword2"
+msgstr "Повторите пароль"
+
+#: project/forms.py:97
+msgid "UploadAvatar"
+msgstr "Фото профиля"
+
+#: project/forms.py:123
+#, fuzzy
+#| msgid "QuestionTitle"
+msgid "QuestionTitle"
+msgstr "Название вопроса"
+
+#: project/forms.py:133
+#, fuzzy
+#| msgid "QuestionContent"
+msgid "QuestionContent"
+msgstr "Описание вопроса"
+
+#: project/forms.py:143
+#, fuzzy
+#| msgid "QuestionTags"
+msgid "QuestionTags"
+msgstr "Тэги"
+
+#: templates/blocks/header.html:7
+msgid "SiteTitle"
+msgstr "project"
+
+#: templates/blocks/header.html:17
+msgid "Search"
+msgstr "Поиск"
+
+#: templates/blocks/header.html:19 templates/questioning/ask.html:3
+#: templates/questioning/ask.html:7
+#, fuzzy
+#| msgid "AskQuestion"
+msgid "AskQuestion"
+msgstr "Задать вопрос!"
+
+#: templates/blocks/header.html:34
+msgid "ProfileSettings"
+msgstr "Настройки профиля"
+
+#: templates/blocks/header.html:37
+msgid "LogOut"
+msgstr "Выйти"
+
+#: templates/blocks/header.html:44 templates/registration/login.html:3
+#: templates/registration/login.html:7 templates/registration/login.html:45
+msgid "LogIn"
+msgstr "Войти"
+
+#: templates/blocks/header.html:47 templates/registration/login.html:48
+#: templates/registration/signup.html:29
+msgid "Register"
+msgstr "Зарегистрироваться"
+
+#: templates/blocks/popular_tags.html:7
+msgid "PopularTags"
+msgstr "Популярные тэги"
+
+#: templates/blocks/popular_tags.html:19 templates/questioning/question.html:32
+msgid "NoTagsFound"
+msgstr "Тэги не найдены"
+
+#: templates/blocks/popular_users.html:7
+msgid "PopularUsers"
+msgstr "Популярные пользователи"
+
+#: templates/blocks/popular_users.html:19
+msgid "NoUsersFound"
+msgstr "Пользователи не найдены"
+
+#: templates/blocks/question_item_old.html:20
+msgid "Answer"
+msgstr "Ответить"
+
+#: templates/questioning/ask.html:29
+msgid "Ask"
+msgstr "Спросить"
+
+#: templates/questioning/index.html:3
+#, fuzzy
+#| msgid "NewQuestions"
+msgid "Questions"
+msgstr "Новые вопросы"
+
+#: templates/questioning/index.html:8 templates/questioning/index.html:16
+msgid "NewQuestions"
+msgstr "Новые вопросы"
+
+#: templates/questioning/index.html:19
+#, fuzzy
+#| msgid "NewQuestions"
+msgid "PopularQuestions"
+msgstr "Популярные вопросы"
+
+#: templates/questioning/index.html:30
+msgid "EmptyQuestionsList"
+msgstr "Список вопросов пуст"
+
+#: templates/questioning/question.html:46
+#, fuzzy
+#| msgid "EmptyQuestionsList"
+msgid "EmptyAnswersList"
+msgstr "Список ответов пуст"
+
+#: templates/registration/signup.html:3 templates/registration/signup.html:7
+msgid "Registration"
+msgstr "Регистрация"
+
+#~ msgid "LoginHint"
+#~ msgstr "Введите ваш логин или эл. почту"
+
+#~ msgid "PreviousPage"
+#~ msgstr "Предыдущая"
+
+#~ msgid "NextPage"
+#~ msgstr "Следующая"
+
+#~ msgid "FailedLogin"
+#~ msgstr "Неверный логин или пароль"

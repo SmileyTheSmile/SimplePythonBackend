@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %} {% trans 'LogIn' %} {% endblock %}
+
+{% block content %}
+  <h1>
+    {% trans 'LogIn' %}
+  </h1>
+  
+  {% include 'blocks/form_errors.html' with form=form %}
+
+  {% if next %}
+      {% if user.is_authenticated %}
+        <p>Your account doesn't have access to this page. To proceed,
+        please login with an account that has access.</p>
+      {% else %}
+        <p>Please login to see this page.</p>
+      {% endif %}
+  {% endif %}
+
+  <form method="post" action="{% url 'login' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% include 'blocks/form_fields.html' with form=form%}
+    <button type="submit" class="btn btn-primary"  value="Login">
+      {% trans 'LogIn' %}
+    </button>
+    <a class="btn btn-outline-primary" href="{% url 'signup' %}" role="button">
+        {% trans 'Register' %}
+    </a>  
+    <input type="hidden" name="next" value="{{ next }}">
+  </form>
+{% endblock %}

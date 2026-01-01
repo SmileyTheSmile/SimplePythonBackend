@@ -2,5 +2,6 @@
 /.vscode
 
 backend/__pycache__
+project/__pycache__
 
 *.sql
