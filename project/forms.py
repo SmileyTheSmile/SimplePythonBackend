@@ -14,7 +14,7 @@ class LoginForm(AuthenticationForm):
         required=True,
         label=_('EnterLogin'),
         #help_text=_('UsernameHelp'),
-        widget=forms.EmailInput(
+        widget=forms.TextInput(
             attrs= {
                 'class': "form-control",
                 'placeholder': _('LoginPlaceholder')
