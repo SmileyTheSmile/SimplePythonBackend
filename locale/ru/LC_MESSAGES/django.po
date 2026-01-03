@@ -2,14 +2,15 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+
 # django-admin makemessage -l ru
 # python manage.py compilemessages --use-fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-23 10:25+0300\n"
+"POT-Creation-Date: 2026-01-03 14:10+0300\n"
 "PO-Revision-Date: 2023-04-09 19:39+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -22,164 +23,193 @@ msgstr ""
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Generator: Poedit 3.2.2\n"
 
-#: project/forms.py:13
+#: .\project\forms.py:15
 msgid "EnterLogin"
 msgstr "Введите логин"
 
-#: project/forms.py:14
-msgid "UsernameHelp"
-msgstr ""
-
-#: project/forms.py:18
+#: .\project\forms.py:20
 msgid "LoginPlaceholder"
 msgstr "Введите имя пользователя"
 
-#: project/forms.py:25
+#: .\project\forms.py:27
 msgid "EnterPassword"
 msgstr "Введите пароль"
 
-#: project/forms.py:26
+#: .\project\forms.py:28
 #, fuzzy
 #| msgid "PasswordHint"
 msgid "PasswordHelp"
 msgstr "Введите ваш пароль"
 
-#: project/forms.py:30
+#: .\project\forms.py:32
 msgid "PasswordPlaceholder"
 msgstr "Введите пароль"
 
-#: project/forms.py:35
+#: .\project\forms.py:37
 msgid "RememberPassword"
 msgstr "Запомнить пароль?"
 
-#: project/forms.py:48
+#: .\project\forms.py:50
 msgid "RegisterUsername"
 msgstr "Имя пользователя"
 
-#: project/forms.py:58
+#: .\project\forms.py:60
 msgid "RegisterEmail"
 msgstr "Электронная почта"
 
-#: project/forms.py:68
+#: .\project\forms.py:70 .\project\forms.py:137
 msgid "RegisterNickname"
 msgstr "Никнэйм"
 
-#: project/forms.py:78
+#: .\project\forms.py:80
 msgid "RegisterPassword1"
 msgstr "Пароль"
 
-#: project/forms.py:88
+#: .\project\forms.py:90
 msgid "RegisterPassword2"
 msgstr "Повторите пароль"
 
-#: project/forms.py:97
+#: .\project\forms.py:99 .\project\forms.py:146
 msgid "UploadAvatar"
 msgstr "Фото профиля"
 
-#: project/forms.py:123
-#, fuzzy
-#| msgid "QuestionTitle"
-msgid "QuestionTitle"
-msgstr "Название вопроса"
-
-#: project/forms.py:133
-#, fuzzy
-#| msgid "QuestionContent"
-msgid "QuestionContent"
-msgstr "Описание вопроса"
-
-#: project/forms.py:143
-#, fuzzy
-#| msgid "QuestionTags"
-msgid "QuestionTags"
-msgstr "Тэги"
-
-#: templates/blocks/header.html:7
+#: .\templates\blocks\header.html:7
 msgid "SiteTitle"
 msgstr "project"
 
-#: templates/blocks/header.html:17
+#: .\templates\blocks\header.html:18
 msgid "Search"
 msgstr "Поиск"
 
-#: templates/blocks/header.html:19 templates/questioning/ask.html:3
-#: templates/questioning/ask.html:7
+#: .\templates\blocks\header.html:33
+msgid "ProfileSettings"
+msgstr "Настройки профиля"
+
+#: .\templates\blocks\header.html:36
+msgid "LogOut"
+msgstr "Выйти"
+
+#: .\templates\blocks\header.html:44 .\templates\registration\login.html:3
+#: .\templates\registration\login.html:7 .\templates\registration\login.html:25
+msgid "LogIn"
+msgstr "Войти"
+
+#: .\templates\blocks\header.html:47 .\templates\registration\login.html:28
+#: .\templates\registration\signup.html:16
+msgid "Register"
+msgstr "Зарегистрироваться"
+
+#: .\templates\questioning\ask.html:3 .\templates\questioning\ask.html:7
 #, fuzzy
 #| msgid "AskQuestion"
 msgid "AskQuestion"
 msgstr "Задать вопрос!"
 
-#: templates/blocks/header.html:34
-msgid "ProfileSettings"
-msgstr "Настройки профиля"
-
-#: templates/blocks/header.html:37
-msgid "LogOut"
-msgstr "Выйти"
-
-#: templates/blocks/header.html:44 templates/registration/login.html:3
-#: templates/registration/login.html:7 templates/registration/login.html:45
-msgid "LogIn"
-msgstr "Войти"
-
-#: templates/blocks/header.html:47 templates/registration/login.html:48
-#: templates/registration/signup.html:29
-msgid "Register"
-msgstr "Зарегистрироваться"
-
-#: templates/blocks/popular_tags.html:7
-msgid "PopularTags"
-msgstr "Популярные тэги"
-
-#: templates/blocks/popular_tags.html:19 templates/questioning/question.html:32
-msgid "NoTagsFound"
-msgstr "Тэги не найдены"
-
-#: templates/blocks/popular_users.html:7
-msgid "PopularUsers"
-msgstr "Популярные пользователи"
-
-#: templates/blocks/popular_users.html:19
-msgid "NoUsersFound"
-msgstr "Пользователи не найдены"
-
-#: templates/blocks/question_item_old.html:20
-msgid "Answer"
-msgstr "Ответить"
-
-#: templates/questioning/ask.html:29
+#: .\templates\questioning\ask.html:16
 msgid "Ask"
 msgstr "Спросить"
 
-#: templates/questioning/index.html:3
+#: .\templates\questioning\index.html:3 .\templates\questioning\index.html:22
 #, fuzzy
 #| msgid "NewQuestions"
 msgid "Questions"
 msgstr "Новые вопросы"
 
-#: templates/questioning/index.html:8 templates/questioning/index.html:16
-msgid "NewQuestions"
+#: .\templates\questioning\index.html:9
+#, fuzzy
+#| msgid "NewQuestions"
+msgid "TaggedQuestions"
 msgstr "Новые вопросы"
 
-#: templates/questioning/index.html:19
+#: .\templates\questioning\index.html:14
 #, fuzzy
 #| msgid "NewQuestions"
 msgid "PopularQuestions"
 msgstr "Популярные вопросы"
 
-#: templates/questioning/index.html:30
+#: .\templates\questioning\index.html:18
+msgid "NewQuestions"
+msgstr "Новые вопросы"
+
+#: .\templates\questioning\index.html:42
 msgid "EmptyQuestionsList"
 msgstr "Список вопросов пуст"
 
-#: templates/questioning/question.html:46
+#: .\templates\questioning\question.html:16
+#: .\templates\questioning\question.html:46
+msgid "Asked"
+msgstr ""
+
+#: .\templates\questioning\question.html:32
+msgid "Tags"
+msgstr ""
+
+#: .\templates\questioning\question.html:56
+#, fuzzy
+#| msgid "AskQuestion"
+msgid "AnswerTheQuestion"
+msgstr "Задать вопрос!"
+
+#: .\templates\questioning\question.html:60
+#, fuzzy
+#| msgid "Answer"
+msgid "PostAnswer"
+msgstr "Ответить"
+
+#: .\templates\questioning\question.html:65
+#, fuzzy
+#| msgid "Answer"
+msgid "HowManyAnswers"
+msgstr "Ответить"
+
+#: .\templates\questioning\question.html:73
 #, fuzzy
 #| msgid "EmptyQuestionsList"
 msgid "EmptyAnswersList"
 msgstr "Список ответов пуст"
 
-#: templates/registration/signup.html:3 templates/registration/signup.html:7
+#: .\templates\registration\profile_edit.html:3
+#: .\templates\registration\profile_edit.html:7
+#, fuzzy
+#| msgid "ProfileSettings"
+msgid "ProfileEdit"
+msgstr "Настройки профиля"
+
+#: .\templates\registration\profile_edit.html:16
+msgid "Save"
+msgstr ""
+
+#: .\templates\registration\signup.html:3
+#: .\templates\registration\signup.html:7
 msgid "Registration"
 msgstr "Регистрация"
+
+#, fuzzy
+#~| msgid "QuestionTitle"
+#~ msgid "QuestionTitle"
+#~ msgstr "Название вопроса"
+
+#, fuzzy
+#~| msgid "QuestionContent"
+#~ msgid "QuestionContent"
+#~ msgstr "Описание вопроса"
+
+#, fuzzy
+#~| msgid "QuestionTags"
+#~ msgid "QuestionTags"
+#~ msgstr "Тэги"
+
+#~ msgid "PopularTags"
+#~ msgstr "Популярные тэги"
+
+#~ msgid "NoTagsFound"
+#~ msgstr "Тэги не найдены"
+
+#~ msgid "PopularUsers"
+#~ msgstr "Популярные пользователи"
+
+#~ msgid "NoUsersFound"
+#~ msgstr "Пользователи не найдены"
 
 #~ msgid "LoginHint"
 #~ msgstr "Введите ваш логин или эл. почту"
