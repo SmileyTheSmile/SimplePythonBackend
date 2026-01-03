@@ -6,7 +6,7 @@ from django.utils.translation import gettext as _
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 
 from django.contrib.auth.views import LoginView
 from django.views.generic import CreateView, UpdateView, ListView
@@ -14,13 +14,35 @@ from django.views.generic.detail import DetailView
 from django.views.generic.edit import FormMixin
 from django.views.generic.list import MultipleObjectMixin
 from django.contrib.messages.views import SuccessMessageMixin
+from rest_framework import permissions, viewsets
 
 from project.forms import SignUpForm, ProfileSettingsForm, LoginForm
 from project.models import Profile
+from project.serializers import GroupSerializer, UserSerializer
 
 
 # django-admin makemessages -l ru
 # python manage.py compilemessages --use-fuzzy
+
+
+class UserViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+
+    queryset = User.objects.all().order_by("-date_joined")
+    serializer_class = UserSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+
+class GroupViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
+
+    queryset = Group.objects.all().order_by("name")
+    serializer_class = GroupSerializer
+    permission_classes = [permissions.IsAuthenticated]
     
 
 class SignUpView(CreateView):
